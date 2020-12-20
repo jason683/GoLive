@@ -14,4 +14,4 @@ I have created a REST API (items.go) modifying the original code block provided 
 With the REST API, sellers can retrieve, insert, modify or delete their item records in their respective databases. 
 However, to use the file, one must have the API key. 
 
-The main.go file is also a modification of the original code block created by the GoSchool lecturers, Kheng Hian (aka Ben) and Ching Yun. 
+The main.go file is also a modification of the original code block created by the GoSchool (https://www.goschool.sg/) lecturers, Kheng Hian (aka Ben) and Ching Yun. 
