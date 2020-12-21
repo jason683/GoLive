@@ -29,7 +29,7 @@ jobs:
       - if: ${{success()}}
         name: Test Go Check
         run: |
-          go test -v./script_test.go          
+          go test ./     
       - if: ${{failure()}}
         name: Create Issues
         uses: nashmaniac/create-issue-action@v1.1
