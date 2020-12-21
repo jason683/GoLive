@@ -26,5 +26,6 @@ Summary of what the various files contain
 4. checkout.go: Shows the possible outcomes from a checkout
 5. script_test.go: testing script
 6. items_db_Items.sql and items_db_Users.sql: Contain the command lines to create a database prototype
+7. Templates folder: Contains the various go html details
 
 
