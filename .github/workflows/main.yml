@@ -22,6 +22,10 @@ jobs:
         id: InstallDeps
         run: |
           go get github.com/go-check/check
+          go get github.com/go-sql-driver/mysql
+          go get github.com/gorilla/mux
+          go get github.com/satori/go.uuid
+          go get golang.org/x/crypto/bcrypt
       - if: ${{success()}}
         name: Test Go Check
         run: |
