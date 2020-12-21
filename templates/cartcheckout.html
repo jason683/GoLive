@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Shopping Cart</title>
+</head>
+<body>
+<h1>Checkout Page</h1>
+<form method="post">
+<img src="https://cdn.shopify.com/s/files/1/0257/1046/0991/products/6519086_2_1.jpg?v=1592569148" style='width:300px; height:250px;'>
+<div>
+    {{ with .handsanitiser}}
+    <p>Hand Sanitiser Cost is {{.}}</p>
+    {{end}}
+</div>
+<img src="https://static.boredpanda.com/blog/wp-content/uploads/2020/07/face-mask-transparent-technology-leaf-5efdc58f69b11__700.jpg" style='width:300px; height:250px;'>
+<div>
+    {{ with .facemask}}
+    <p>Face Mask Cost is {{.}}</p>
+    {{end}}
+</div>
+<img src="https://4.imimg.com/data4/YQ/KY/MY-23257013/reusable-latex-rubber-hand-gloves-hands-safety-500x500.jpg" style='width:300px; height:250px;'>
+<div>
+    {{ with .gloves}}
+    <p>Gloves Cost is {{.}}</p>
+    {{end}}
+</div>
+<div>
+    {{ with .totalcost}}
+    <p>The total cost is {{.}}</p>
+    {{end}}
+</div>
+<input type="submit" value="Make payment">
+</form>
+<h2><a href="/shoppingcart">Click here to view your shopping cart</a></h2>
+<h2><a href="/cancelcheckout">Click here to remove all items from your shopping cart</a></h2>
+<h2><a href="/logout">Log Out</a></h2>
+</body>
+</html>

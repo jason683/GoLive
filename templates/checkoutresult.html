@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Shopping Cart</title>
+</head>
+<body>
+<h1>Checkout Page</h1>
+<div>
+    {{ with .successfulcheckout}}
+    <p>{{.}}</p>
+    {{end}}
+</div>
+<div>
+    {{ with .failedcheckout}}
+    <p>{{.}}</p>
+    {{end}}
+</div>
+<div>
+    {{ with .notenoughavailableitems}}
+    <p>{{.}}</p>
+    {{end}}
+</div>
+<h2><a href="/">Click here to return to the home page</a></h2>
+<h2><a href="/logout">Log Out</a></h2>
+</body>
+</html>

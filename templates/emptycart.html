@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Shopping Cart</title>
+</head>
+<body>
+<h1>Shopping Cart</h1>
+    <div>
+        {{ with .emptycart}}
+        <p>You currently have no items in your cart.</p>
+        {{end}}
+    </div>    
+    <div>
+        {{ with .totalcost}}
+        <p>You currently have no items in your cart.</p>
+        {{end}}
+    </div>  
+<h2><a href="/viewitems">Click here to view the available items</a></h2>
+<h2><a href="/">Click here to return to the home page</a></h2>
+<h2><a href="/logout">Log Out</a></h2>
+</body>
+</html>
