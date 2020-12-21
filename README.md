@@ -27,5 +27,6 @@ Summary of what the various files contain
 5. script_test.go: testing script
 6. items_db_Items.sql and items_db_Users.sql: Contain the command lines to create a database prototype
 7. Templates folder: Contains the various go html details
+8. items.go: a REST API to demonstrate my understanding
 
 
