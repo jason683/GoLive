@@ -18,3 +18,13 @@ To circumvent this, you can simply remove the cert and key files and modify List
 But of course, this is only for illustration purposes as this will be a big security loophole without the SSL layer.  
 
 The main.go file is also a modification of the original code block created by the GoSchool (https://www.goschool.sg/) lecturers, Kheng Hian (aka Ben) and Ching Yun. 
+
+Summary of what the various files contain
+1. main.go: Starts the client server interaction and will activate the respective functions whenever a local host url is entered
+2. viewitems.go: Shows the list of items available for sale
+3. cart.go: Shows what's in the shopping cart
+4. checkout.go: Shows the possible outcomes from a checkout
+5. script_test.go: testing script
+6. items_db_Items.sql and items_db_Users.sql: Contain the command lines to create a database prototype
+
+
