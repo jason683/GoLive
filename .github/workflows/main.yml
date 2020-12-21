@@ -21,6 +21,7 @@ jobs:
       - name: Install Dependencies
         id: InstallDeps
         run: |
+          go get github.com/go-check/check
           go get github.com/go-sql-driver/mysql
           go get github.com/gorilla/mux
           go get github.com/satori/go.uuid
@@ -28,7 +29,7 @@ jobs:
       - if: ${{success()}}
         name: Test Script
         run: |
-          go test . -v
+          go test -v
       - if: ${{failure()}}
         name: Create Issues
         uses: nashmaniac/create-issue-action@v1.1
